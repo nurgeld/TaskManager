@@ -3,11 +3,11 @@ FactoryBot.define do
     "string#{n}"
   end
 
-  sequence :string, aliases: [:name] do |n|
+  sequence :name do |n|
     "task number #{n}"
   end
 
-  sequence :string, aliases: [:description] do |n|
+  sequence :description do |n|
     "task number #{n} description"
   end
 
