@@ -14,32 +14,4 @@ FactoryBot.define do
   sequence :email do |n|
     "postbox#{n}@examplemail.com"
   end
-
-  # sequence :state do
-  #   state :new_task
-  # end
-
-  # trait :to_development do
-  #   state :in_development
-  # end
-
-  # trait :to_archive do
-  #   state :archived
-  # end
-
-  # trait :to_qa do
-  #   state :in_qa
-  # end
-
-  # trait :to_code_review do
-  #   state :in_code_review
-  # end
-
-  # trait :to_ready_for_release do
-  #   state :ready_for_release
-  # end
-
-  # trait :to_release do
-  #   state :released
-  # end
 end
