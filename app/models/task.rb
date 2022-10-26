@@ -6,7 +6,6 @@ class Task < ApplicationRecord
   validates :description, presence: true
   validates :author, presence: true
   validates :description, length: { maximum: 500 }
-  # validates :state, inclusion: { in: %w(new_task in_development in_code_review in_qa ready_for_release released archived) }
 
   state_machine initial: :new_task do
     event :to_development do
