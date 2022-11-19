@@ -14,4 +14,12 @@ FactoryBot.define do
   sequence :email do |n|
     "postbox#{n}@examplemail.com"
   end
+
+  sequence :avatar do |n|
+    "picture#{n}.png"
+  end
+
+  sequence :expired_at do |n|
+    Date.new + n
+  end
 end
